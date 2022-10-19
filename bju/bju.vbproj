@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28C1E062-8AD4-4672-BA5B-C6755B63E860}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>bju.My.MyApplication</StartupObject>
+    <RootNamespace>bju</RootNamespace>
+    <AssemblyName>bju</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bju.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>bju.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=1.3.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\..\..\Downloads\Nadhemni-main\Nadhemni-main\packages\Bunifu.UI.WinForms.2.1.6\lib\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\..\Downloads\Nadhemni-main\Nadhemni-main\packages\Bunifu.UI.WinForms.2.1.6\lib\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
+      <HintPath>..\..\..\..\Downloads\Nadhemni-main\Nadhemni-main\packages\Bunifu.UI.WinForms.2.1.6\lib\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\..\Downloads\Nadhemni-main\Nadhemni-main\packages\Bunifu.UI.WinForms.2.1.6\lib\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>..\..\..\..\Downloads\Nadhemni-main\Nadhemni-main\packages\Bunifu.UI.WinForms.2.1.6\lib\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fHomeAdmin.Designer.vb">
+      <DependentUpon>fHomeAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fHomeAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHomeUser.Designer.vb">
+      <DependentUpon>fHomeUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fHomeUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.vb">
+      <DependentUpon>fLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fInputDokter.Designer.vb">
+      <DependentUpon>fInputDokter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fInputDokter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fTambahKunjungan.Designer.vb">
+      <DependentUpon>fTambahKunjungan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fTambahKunjungan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fInputHasilLab.Designer.vb">
+      <DependentUpon>fInputHasilLab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fInputHasilLab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fTambahLab.Designer.vb">
+      <DependentUpon>fTambahLab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fTambahLab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fTambahPasien.Designer.vb">
+      <DependentUpon>fTambahPasien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fTambahPasien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fTambahPoli.Designer.vb">
+      <DependentUpon>fTambahPoli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fTambahPoli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fTambahSdm.Designer.vb">
+      <DependentUpon>fTambahSdm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fTambahSdm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fTambahService.Designer.vb">
+      <DependentUpon>fTambahService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\fTambahService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fHomeAdmin.resx">
+      <DependentUpon>fHomeAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHomeUser.resx">
+      <DependentUpon>fHomeUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fTambahKunjungan.resx">
+      <DependentUpon>fTambahKunjungan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fInputHasilLab.resx">
+      <DependentUpon>fInputHasilLab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fTambahLab.resx">
+      <DependentUpon>fTambahLab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fTambahPasien.resx">
+      <DependentUpon>fTambahPasien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fTambahPoli.resx">
+      <DependentUpon>fTambahPoli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fTambahSdm.resx">
+      <DependentUpon>fTambahSdm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fTambahService.resx">
+      <DependentUpon>fTambahService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Banner Kop BJU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO TAG.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

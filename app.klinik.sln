@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "bju", "bju\bju.vbproj", "{28C1E062-8AD4-4672-BA5B-C6755B63E860}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ticketing_system_fix", "..\..\..\Documents\Ubuntu\Klinik\ticketing_system_fix\ticketing_system_fix.vbproj", "{BB58FC59-F7D5-4C08-811B-FBB431F366E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28C1E062-8AD4-4672-BA5B-C6755B63E860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C1E062-8AD4-4672-BA5B-C6755B63E860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C1E062-8AD4-4672-BA5B-C6755B63E860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C1E062-8AD4-4672-BA5B-C6755B63E860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB58FC59-F7D5-4C08-811B-FBB431F366E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB58FC59-F7D5-4C08-811B-FBB431F366E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB58FC59-F7D5-4C08-811B-FBB431F366E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB58FC59-F7D5-4C08-811B-FBB431F366E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21408481-D607-478E-8518-2ECA01066CD3}
+	EndGlobalSection
+EndGlobal
